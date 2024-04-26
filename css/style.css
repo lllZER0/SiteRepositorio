@@ -8,7 +8,56 @@ body {
     background-image: url("Clipboard02.jpg");
     padding: 3%;
     font-family: "trebuchet MS";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.search-box{
+position: absolute;    
+top: 14%;
+left:13%;
+transform: translate(-50%, -50%);
+background: #353b48;
+height: 40px;
+border-radius: 40px;
+padding: 10px;
+}
+
+.search-btn{
+    color: #00a8ff;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 80%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.search-box:hover > .search-txt{
+    width: 200px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn{
+    background: white;
+}
+
+
 
 #corpo {
     background: #000000;
@@ -19,10 +68,29 @@ body {
     overflow: hidden;
 }
 
+form input, form button {
+    font-size: 1,2;
+    border-radius: 0.2em;
+    border: none;
+    padding: o.2em;
+}
+
+form button {
+    cursor: pointer;
+    background: none;
+    color: whitesmoke;
+}
+
+form button :hover {
+    background-color: whitesmoke;
+    color: blueviolet;
+}
+
 header {
     background-color: #010102;
     padding: 2%;
     border-bottom: 1px solid #021f85;
+
 
 }
 
